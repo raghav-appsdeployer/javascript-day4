@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .list {
+        background-color: violet;
+        list-style: none;
+      }
+      .list:first-child,
+      .list:last-child {
+        background-color: blue;
+      }
+      .cdiv {
+        background-color: black;
+        overflow: hidden;
+      }
+      .cdiv a {
+        padding: 14px 16px;
+        display: block;
+        float: left;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: cursive;
+      }
+      #a1 {
+        float: right;
+        margin-right: 20px;
+      }
+      .cdiv a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+      a:first-child{
+        color: cyan;
+      }
+      .footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.footer__nav li {
+  padding: 0.4rem;
+}
+.footer__copyright{
+    display: flex;
+    justify-content: flex-end;
+    padding:0.5rem;
+}
+    </style>
+  </head>
+  <body>
+    <div class="cdiv">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+      <a href="#">For query</a>
+      <a href="#" id="a1">Login</a>
+    </div>
+    <h2>question 1</h2>
+    <form action="" id="validateForm">
+      <input type="text" id="inp" />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>question 2 and 3</h2>
+    <button id="promptEligibility">Question 1 By Prompt</button>
+    <h2 id="promptTxt"></h2>
+    <h2>question 4</h2>
+    <form action="" id="urlForm">
+      <input type="text" id="urlTxt" />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>question 5</h2>
+    <button id="promptBackgroundColorAndColor">
+      click for Background color and text color
+    </button>
+    <h2>quetion 6</h2>
+    <ul>
+      <li class="list">item 1</li>
+      <li  class="list">item 2</li>
+      <li  class="list">item 3</li>
+      <li  class="list">item 4</li>
+    </ul>
+    <h2>question 7</h2>
+    <table border="4">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Section</th>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>10th</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Ramesh</td>
+        <td>11th</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Shyam</td>
+        <td>9th</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>Suresh</td>
+        <td>10th</td>
+        <td>b</td>
+      </tr>
+      <tr>
+        <td>Mahesh</td>
+        <td>9th</td>
+        <td>D</td>
+      </tr>
+    </table>
+
+    <div class="footer">
+        <ul class="footer__nav">
+          <li>About us</li>
+          <li>Help</li>
+          <li>Contact us</li>
+        </ul>
+        <p class="footer__copyright">
+          &copy; by Raghav. All rights reserved.
+        </p>
+      </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
